@@ -99,9 +99,11 @@ function fazerRequisicao(led) {
 
     var url = "http://179.97.142.92/" + led;
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", url);
-    xhttp.send();
+    window.open(url, 'Titulo da Janela', 'STATUS=YES, TOOLBAR=NO, LOCATION=CENTER, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=200, LEFT=200, WIDTH=50, HEIGHT=50');
+
+    // var xhttp = new XMLHttpRequest();
+    // xhttp.open("POST", url);
+    // xhttp.send();
     /*A execução do script pára aqui até a requisição retornar do servidor*/
 
 }

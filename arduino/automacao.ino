@@ -3,11 +3,6 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 
-#include <HTTPSServer.hpp>
-#include <SSLCert.hpp>
-#include <HTTPRequest.hpp>
-#include <HTTPResponse.hpp>
-
 const char* ssid = "MatheusNet";
 const char* password = "MarteX2020";
 
@@ -135,14 +130,14 @@ void setup(void){
   
 
   //CONFIG CONEX WIFI PETRAHOUSE
-  Serial.begin(115200);
+  Serial.begin();
   WiFi.begin(ssid, password);
   Serial.println("");
 
   // ESPERANDO PELA CONEXAO
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
-    Serial.print(".");
+    Serial.print("Conectando ao Wifi.");
     pisca();
   }
   acendeTodos();
