@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*----------------AQUI_COMECA_A_CONFIG_GERAL-------------*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(128, 128, 128, .5);
+    color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: 600px;
+    /*largura da interface*/
+    background-color: #d6d6d6;
+    margin: -9px auto 0px auto;
+    /*,espaço externo do container(cima, esquerda, baixo, direita)*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /*sombra (deslocamento lateral, deslocamento vertical, espalhamento da sombra, cor da sombra)*/
+    padding: 10px;
+    /*,espaço interno do container(cima, esquerda, baixo, direita) ou se o valor for igual para todos os lados, fazemos como foi feito*/
+}
+
+
+/*----------------AQUI_TERMINA_A_CONFIG_GERAL-------------*/
+
+
+/*----------------AQUI_COMECA_O_MENU_SUPERIOR-------------*/
+
+nav#menu {
+    position: relative;
+    width: 620px;
+    /*largura da interface*/
+    height: 210px;
+    background: url("../imagens/backgrounds/estilo-industrial.jpg") no-repeat 50% 50%;
+    top: -9px;
+    left: -10px;
+    border-bottom: 3px solid #606060;
+}
+
+nav#menu img#icone {
+    display: block;
+    float: left;
+    padding-right: 10px;
+    opacity: .8;
+}
+
+nav#menu img#icone:hover {
+    opacity: 1;
+}
+
+nav#menu h1 {
+    font-family: 'Share Tech', sans-serif;
+    padding-top: 10px;
+    color: white;
+    font-size: 15pt;
+}
+
+nav#menu h2 {
+    font-family: 'Share Tech', sans-serif;
+    color: white;
+    font-size: 13pt;
+}
+
+
+/*--------------------AQUI_COMECA_O_MENU_SUPERIOR------------------*/
+
+
+/*--------------------AQUI_COMECA_O_CORPO--------------------------*/
+
+section#corpo {
+    display: block;
+    background-color: #dddddd;
+    background: url("../imagens/planta/casa-BlackWhite.png") no-repeat;
+    width: 390px;
+    height: 398px;
+    margin: 10px auto 10px auto;
+    border: 1px solid #606060;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .5);
+}
+
+
+/*--------------------AQUI_TERMINA_O_CORPO--------------------------*/
+
+
+/*--------------------AQUI_COMECA_O_RODAPE--------------------------*/
+
+footer#rodape {
+    clear: both;
+    /*este clear both, vai fazer com que ele não siga as instruções dadas anteriormente, fazendo o rodapé não ficar flutuando nem na direita nem na esquerda, mas sim, em baixo, no lugar correto*/
+    border-top: 1px solid #606060;
+    /* borda do lado supeior do rodapé com espessura de 1 px, continua e na cor #606060*/
+}
+
+footer#rodape p {
+    text-align: center;
+    /*Centralizamos o conteudo "p" ou tudo que for paragrafo(p) que esta no footer, chamado rodapé(com id="rodapé"), esteja centralizado*/
+}
+
+
+/*--------------------AQUI_TERMINA_O_RODAPE--------------------------*/

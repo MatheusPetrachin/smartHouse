@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Casa Inteligente!</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/fotos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Share+Tech|Share+Tech+Mono" rel="stylesheet">
+
+    <script type="text/javascript" src="javascript/fotos.js"></script>
+
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <nav id="menu">
+                <img id="icone" src="imagens/logo/casa-papelao.png" onclick="mudaLuz()" />;
+                <h1>A casa inteligente.</h1>
+                <h2>Clique no cômodo desejado para alterar seu estado</h2>
+            </nav>
+        </header>
+        <section id="corpo">
+            <article id="noticia-principal">
+                <ul id="comodos-casa">
+                    <li id="1"><img id="Quarto-Visitas" src="imagens/planta/comodos/quarto-Visitas.png" onclick="mudaLuz('quarto-Visitas')" /></li>
+                    <li id="2"><img id="Sala-Estar" src="imagens/planta/comodos/sala-Estar.png" onclick="mudaLuz('sala-Estar')" /></li>
+                    <li id="3"><img id="Quarto-Casal" src="imagens/planta/comodos/quarto-Casal.png" onclick="mudaLuz('quarto-Casal')" /></li>
+                    <li id="4"><img id="Hall" src="imagens/planta/comodos/hall.png" onclick="mudaLuz('hall')" /></li>
+                    <li id="5"><img id="Cosinha" src="imagens/planta/comodos/cosinha.png" onclick="mudaLuz('cosinha')" /></li>
+                    <li id="6"><img id="Banheiro" src="imagens/planta/comodos/banheiro.png" onclick="mudaLuz('banheiro')" /></li>
+                </ul>
+            </article>
+        </section>
+        <footer id="rodape">
+
+        </footer>
+    </div>
+</body>
+
+</html>
