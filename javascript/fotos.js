@@ -97,7 +97,7 @@ function mudaLuz(tipo) {
 
 function fazerRequisicao(led) {
 
-    var url = "http://192.168.15.21/" + led;
+    var url = "http://179.97.142.92/" + led;
 
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", url);
