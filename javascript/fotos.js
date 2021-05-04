@@ -99,7 +99,8 @@ function fazerRequisicao(led) {
 
     var url = "http://179.97.142.92/" + led;
 
-    window.open(url, 'Titulo da Janela', 'STATUS=YES, TOOLBAR=NO, LOCATION=CENTER, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=200, LEFT=200, WIDTH=50, HEIGHT=50');
+    win = window.open(url, 'Windows', 'width=30,height=30');
+    win.close();
 
     // var xhttp = new XMLHttpRequest();
     // xhttp.open("POST", url);
