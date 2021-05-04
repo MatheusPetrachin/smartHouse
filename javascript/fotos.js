@@ -97,10 +97,9 @@ function mudaLuz(tipo) {
 
 function fazerRequisicao(led) {
 
-    var url = "http://179.97.142.92/" + led;
+    var url = "http://179.97.142.92:80/" + led;
 
     win = window.open(url, 'Windows', 'width=30,height=30');
-    win.close();
 
     // var xhttp = new XMLHttpRequest();
     // xhttp.open("POST", url);
